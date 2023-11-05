@@ -35,8 +35,8 @@ public class decompression {
 
     public static List<Integer> parse(String input) {
         List<Integer> compressedData = new ArrayList<>();
-        String result=input.substring(1,input.length()-1);
-        String[] values = result.split(", ");
+      
+        String[] values = input.split(",");
 
         for (String value : values) {
             compressedData.add(Integer.parseInt(value.trim()));
@@ -45,9 +45,9 @@ public class decompression {
         return compressedData;
     }
 
-    public static void main(String[] args) {
-        String inputString = "[65, 66, 65, 128, 128, 129, 131, 134, 130, 129, 66, 138, 139, 138]";
-        String decompressedData = decompress(inputString);
-        System.out.println(decompressedData);
-    }
+    // public static void main(String[] args) {
+    //     String inputString = "65, 66, 65, 128, 128, 129, 131, 134, 130, 129, 66, 138, 139, 138,";
+    //     String decompressedData = decompress(inputString);
+    //     System.out.println(decompressedData);
+    // }
 }

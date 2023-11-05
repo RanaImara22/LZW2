@@ -62,7 +62,7 @@ public class Main {
             }
             String strcon=fileContent.toString();
             String compressedData = compression.compress(strcon);
-//            String compressedDataStr = compressedData.toString();
+
             BufferedWriter writer = new BufferedWriter(new FileWriter(file, false));
             writer.write(compressedData);
             writer.newLine();
