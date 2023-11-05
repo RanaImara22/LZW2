@@ -35,10 +35,11 @@ public class decompression {
 
     public static List<Integer> parse(String input) {
         List<Integer> compressedData = new ArrayList<>();
-      
+
         String[] values = input.split(",");
 
         for (String value : values) {
+
             compressedData.add(Integer.parseInt(value.trim()));
         }
 

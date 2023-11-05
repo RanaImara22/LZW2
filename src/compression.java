@@ -5,7 +5,7 @@ public class compression {
         int dicSize=128;
         Map<String,Integer>dic=new HashMap<>();
 
-        for (int i = 65; i < dicSize; i++) {
+        for (int i = 0; i < dicSize; i++) {
             dic.put(String.valueOf((char)i), i);
         }
         // "ABAABABBAABA"
