@@ -18,7 +18,7 @@ public class compression {
             }
             String currentSubstring=data.substring(i,i+matching);
             sb.append(dic.get(currentSubstring));
-            if (i + matching < data.length() - 1) {
+            if (i + matching < data.length()) {
                 sb.append(",");
             }
 
